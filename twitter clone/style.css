@@ -1,0 +1,157 @@
+:root{
+    --main-color:#1da1f2;
+    --dark-color: #14171a;
+    --footer-link-color: #aab8c2;
+    --footer-top-border-color: #e6ecf0;
+}
+*,*::after ,*::before{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+}
+p,a,h1,h2,h3,li,span{
+    font-family: 'Open Sans',sans-serif;
+}
+.left-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 85vh 15vh;
+}
+.left-container .left-box{
+    background-color: #7accfe;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./twitter-brands.svg);
+    background-size: 155%;
+    background-position: 13% 44%;
+} 
+
+.left-container .left-box ul li{
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 50px 0;
+    font-weight: bold;
+    color: white;
+}
+.left-container .left-box ul li .icon{
+    font-size: 23px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.left-container .right-box{
+    background-color:white;
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.left-container .right-box .card{
+    min-width: 300px;
+    padding: 0 60px ;
+}
+
+.left-container .right-box .card .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+button.btn{
+    display: block;
+    border: none;
+    outline: none;
+    font-size:14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
+button.block{
+    width: 100%;
+    font-weight: 700;
+    min-height: 2.3125rem;
+    min-width: 3.72rem;
+    border-radius: 20px;
+    
+}
+button.sign{
+    background-color: var(--main-color);
+    color:white;
+    margin-bottom: 0.75rem;
+}
+button.outline{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-top: 0.8rem;
+}
+button.log{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-top: 0.8rem;
+}
+#h1{
+    font-size: 27px;
+    line-height: 2.29rem;
+    color: var(--dark-color);
+    margin-top: 1.25rem;
+    display: block;
+    font-weight: 700;
+}
+#p{
+    margin-top: 3.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--dark-color);
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-top: 40px;
+}
+
+.logo{
+    font-size: 3em;
+    color:var(--main-color);
+}
+
+
+.left-container .bottom-box{
+    border-top: 1px solid var(--footer-top-border-color);
+    grid-column: 1 / -1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#ul{
+    text-align: center;
+    display: flex;
+}
+
+.left-container .bottom-box ul li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.left-container .bottom-box ul li a{
+    font-size:13px ;
+    color:rgb(91, 112, 131);
+    text-decoration: none;
+}
+.div{
+    align-items: center;
+}
